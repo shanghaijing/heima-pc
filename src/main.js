@@ -1,8 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
+// 加载 element 组件库
+import ElementUI from 'element-ui'
+// 加载 element 组件库的样式
+import 'element-ui/lib/theme-chalk/index.css'
 import router from './router' // 将路由加载进来
 // 加载全局样式文件
 import './styles/index.less'
+// 全局注册 elements ui  组件库
+Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 // 创建 vue 根实例对象
